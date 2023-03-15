@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hunter page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <h2>Find the mouse by Gayathri Nangineni</h2>
+    <p style="background-color: rgb(165, 224, 204);">Click on the bushes to search for
+        the mouse, beware the cat</p>
+    <p style="background-color: rgb(157, 231, 231);" id="bushes">Number of bushes checked is zero</p>
+    <p style="background-color: antiquewhite;" id="penalty">Penalty is zero</p>
+    <p style="background-color: rgb(225, 193, 153);" onclick="help()">Click for help</p>
+    <p style="background-color: aqua;" id="help">Help report</p>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img class="img-rounded" src="smallbush.jpg" alt="image of small bush" height="150" width="150" id="id0"
+                    onclick="check(0)">
+            </div>
+            <div class="col-2">
+                <img class="img-rounded" src="smallbush.jpg" alt="image of small bush" height="150" width="150" id="id1"
+                    onclick="check(1)">
+            </div>
+            <div class="col-2">
+                <img class="img-rounded" src="smallbush.jpg" alt="image of small bush" height="150" width="150" id="id2"
+                    onclick="check(2)">
+            </div>
+            <div class="col-2">
+                <img class="img-rounded" src="smallbush.jpg" alt="image of small bush" height="150" width="150" id="id3"
+                    onclick="check(3)">
+            </div>
+            <div class="col-2">
+                <img class="img-rounded" src="smallbush.jpg" alt="image of small bush" height="150" width="150" id="id4"
+                    onclick="check(4)">
+            </div>
+            <div class="col-2">
+                <img class="img-rounded" src="smallbush.jpg" alt="image of small bush" height="150" width="150" id="id5"
+                    onclick="check(5)">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img class="img-rounded" src="smallbush.jpg" alt="image of small bush" height="150" width="150" id="id6"
+                    onclick="check(6)">
+            </div>
+            <div class="col-2">
+                <img class="img-rounded" src="smallbush.jpg" alt="image of small bush" height="150" width="150" id="id7"
+                    onclick="check(7)">
+            </div>
+            <div class="col-2">
+                <img class="img-rounded" src="smallbush.jpg" alt="image of small bush" height="150" width="150" id="id8"
+                    onclick="check(8)">
+            </div>
+            <div class="col-2">
+                <img class="img-rounded" src="smallbush.jpg" alt="image of small bush" height="150" width="150" id="id9"
+                    onclick="check(9)">
+            </div>
+            <div class="col-2">
+                <img class="img-rounded" src="smallbush.jpg" alt="image of small bush" height="150" width="150"
+                    id="id10" onclick="check(10)">
+            </div>
+            <div class="col-2">
+                <img class="img-rounded" src="smallbush.jpg" alt="image of small bush" height="150" width="150"
+                    id="id11" onclick="check(11)">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img class="img-rounded" src="smallbush.jpg" alt="image of small bush" height="150" width="150"
+                    id="id12" onclick="check(12)">
+            </div>
+            <div class="col-2">
+                <img class="img-rounded" src="smallbush.jpg" alt="image of small bush" height="150" width="150"
+                    id="id13" onclick="check(13)">
+            </div>
+            <div class="col-2">
+                <img class="img-rounded" src="smallbush.jpg" alt="image of small bush" height="150" width="150"
+                    id="id14" onclick="check(14)">
+            </div>
+            <div class="col-2">
+                <img class="img-rounded" src="smallbush.jpg" alt="image of small bush" height="150" width="150"
+                    id="id15" onclick="check(15)">
+            </div>
+            <div class="col-2">
+                <img class="img-rounded" src="smallbush.jpg" alt="image of small bush" height="150" width="150"
+                    id="id16" onclick="check(16)">
+            </div>
+            <div class="col-2">
+                <img class="img-rounded" src="smallbush.jpg" alt="image of small bush" height="150" width="150"
+                    id="id17" onclick="check(17)">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img class="img-rounded" src="smallbush.jpg" alt="image of small bush" height="150" width="150"
+                    id="id18" onclick="check(18)">
+            </div>
+            <div class="col-2">
+                <img class="img-rounded" src="smallbush.jpg" alt="image of small bush" height="150" width="150"
+                    id="id19" onclick="check(19)">
+            </div>
+            <div class="col-2">
+                <img class="img-rounded" src="smallbush.jpg" alt="image of small bush" height="150" width="150"
+                    id="id20" onclick="check(20)">
+            </div>
+            <div class="col-2">
+                <img class="img-rounded" src="smallbush.jpg" alt="image of small bush" height="150" width="150"
+                    id="id21" onclick="check(21)">
+            </div>
+            <div class="col-2">
+                <img class="img-rounded" src="smallbush.jpg" alt="image of small bush" height="150" width="150"
+                    id="id22" onclick="check(22)">
+            </div>
+            <div class="col-2">
+                <img class="img-rounded" src="smallbush.jpg" alt="image of small bush" height="150" width="150"
+                    id="id23" onclick="check(23)">
+            </div>
+        </div>
+    </div>
+    <script>
+        let ids = [];
+        let id = 'id';
+        let checkCount = 0;
+        let penalty = 0;
+        let lastCheck = 0;
+        let mouseLocation = 13;
+        let catLocation = 21;
+        let gameOver = false;
+        for (let i = 0; i < 24; i++) {
+            ids[i] = id + i;
+        }
+        function check(position) {
+            if (gameOver == true) {
+
+            }
+            else {
+                if (position == mouseLocation) {
+                    id = ids[position]
+                    document.getElementById(id).src = "mouse.jpg";
+                    gameOver = true;
+                    penalty = penalty - 3;
+                    console.log("image is mouse " + position);
+                    console.log("penalty is " + penalty);
+                    console.log("GameOver");
+                }
+                else if (position == catLocation) {
+                    id = ids[position]
+                    document.getElementById(id).src = "tiger.jpg";
+                    gameOver = true;
+                    penalty = penalty + 4;
+                    console.log("image is cat " + position);
+                    console.log("penalty is " + penalty);
+                    console.log("GameOver");
+                }
+                else {
+                    id = ids[position]
+                    document.getElementById(id).src = "grass.jpg";
+                    checkCount += 1;
+                    penalty += 1;
+                    console.log("checkcount is " + checkCount);
+                    console.log("penalty is " + penalty);
+                }
+                lastCheck = position;
+                console.log("lastCheck position is " + lastCheck);
+
+            }
+
+            bushes.innerHTML = "Number of bushes checked is " + checkCount;
+            penalty.innerHTML = "Penalty is " + penalty;
+
+
+        }
+        function help() {
+        var mouseRowval = parseInt(mouseLocation / 6) ;
+        var mouseColval = mouseLocation % 6; 
+        var columnval = lastCheck % 6 ;
+        var catRowval = parseInt(catLocation / 6) ;
+        var catColval = catLocation % 6;
+        var rowval = parseInt(lastCheck / 6) ;
+
+        
+        
+        if ((Math.abs(catRowval - rowval) <= 1) && (Math.abs(catColval - columnval) <= 1)) { 
+            document.getElementById("help").innerHTML = "meow";
+        }else if ((Math.abs(mouseRowval - rowval) <= 1) && (Math.abs(mouseColval - columnval) <= 1)) {
+            document.getElementById("help").innerHTML = "squeek";
+        }else {
+            document.getElementById("help").innerHTML = "sorry, no help available";
+        }
+        penalty += 2;
+        document.getElementById("penalty").innerHTML = "Penalty is " + penalty;
+    }
+
+    </script>
+</body>
+
+</html>
