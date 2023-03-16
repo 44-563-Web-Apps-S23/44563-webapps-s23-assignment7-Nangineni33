@@ -25,6 +25,7 @@
     <p style="background-color: antiquewhite;" id="penalty">Penalty is zero</p>
     <p style="background-color: rgb(225, 193, 153);" onclick="help()">Click for help</p>
     <p style="background-color: aqua;" id="help">Help report</p>
+    <button type="button" class="btn btn-success" onclick="newgame()"> Reset</button>
     <br>
     <div class="container">
         <div class="row">
@@ -192,25 +193,35 @@
 
         }
         function help() {
-        var mouseRowval = parseInt(mouseLocation / 6) ;
-        var mouseColval = mouseLocation % 6; 
-        var columnval = lastCheck % 6 ;
-        var catRowval = parseInt(catLocation / 6) ;
-        var catColval = catLocation % 6;
-        var rowval = parseInt(lastCheck / 6) ;
+            var mouseRowval = parseInt(mouseLocation / 6);
+            var mouseColval = mouseLocation % 6;
+            var columnval = lastCheck % 6;
+            var catRowval = parseInt(catLocation / 6);
+            var catColval = catLocation % 6;
+            var rowval = parseInt(lastCheck / 6);
 
-        
-        
-        if ((Math.abs(catRowval - rowval) <= 1) && (Math.abs(catColval - columnval) <= 1)) { 
-            document.getElementById("help").innerHTML = "meow";
-        }else if ((Math.abs(mouseRowval - rowval) <= 1) && (Math.abs(mouseColval - columnval) <= 1)) {
-            document.getElementById("help").innerHTML = "squeek";
-        }else {
-            document.getElementById("help").innerHTML = "sorry, no help available";
+
+
+            if ((Math.abs(catRowval - rowval) <= 1) && (Math.abs(catColval - columnval) <= 1)) {
+                document.getElementById("help").innerHTML = "meow";
+            } else if ((Math.abs(mouseRowval - rowval) <= 1) && (Math.abs(mouseColval - columnval) <= 1)) {
+                document.getElementById("help").innerHTML = "squeek";
+            } else {
+                document.getElementById("help").innerHTML = "sorry, no help available";
+            }
+            penalty += 2;
+            document.getElementById("penalty").innerHTML = "Penalty is " + penalty;
+            function newgame() {
+                mouseLocation = Math.floor(Math.random() * 24)
+                catLocation = Math.floor(Math.random() * 24)
+                document.getElementById("bushes").innerHTML = "Number of bushes checked is 0"
+                document.getElementById("penalty").innerHTML = "Penalty is 0"
+                for (var i = 0; i <= 23; i++) {
+                    document.getElementById(ids[i]).src = "bush.jpg"
+
+                }
+            }
         }
-        penalty += 2;
-        document.getElementById("penalty").innerHTML = "Penalty is " + penalty;
-    }
 
     </script>
 </body>
